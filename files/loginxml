@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config-auth client="vpn" type="complete" aggregate-auth-version="2">
+<session-id>106496</session-id>
+<session-token>61D5E0@106496@2C64@1A03AA09D5B053ED6F58D56ABDF4EA125F12956C</session-token>
+<auth id="success">
+<message id="0" param1="" param2=""></message>
+</auth>
+<capabilities>
+<crypto-supported>ssl-dhe</crypto-supported>
+</capabilities>
+<config client="vpn" type="private">
+<vpn-base-config>
+<base-package-uri>/CACHE/stc/1</base-package-uri>
+<server-cert-hash>###SERVERCERT###</server-cert-hash>
+</vpn-base-config>
+<opaque is-for="vpn-client"><service-profile-manifest>
+<ServiceProfiles rev="1.0">
+  <Profile service-type="user">
+    <FileName></FileName>
+    <FileExtension>xml</FileExtension>
+    <Directory></Directory>
+    <DeployDirectory></DeployDirectory>
+    <Description>AnyConnect VPN Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="vpn-mgmt">
+    <FileName>VpnMgmtTunProfile.xml</FileName>
+    <FileExtension>vpnm</FileExtension>
+    <Directory>Profile\MgmtTun</Directory>
+    <DeployDirectory>Profile\MgmtTun</DeployDirectory>
+    <Description>AnyConnect Management VPN Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="nam">
+    <FileName>configuration.xml</FileName>
+    <FileExtension>nsp</FileExtension>
+    <Directory>Network Access Manager\system</Directory>
+    <DeployDirectory>Network Access Manager\newConfigFiles</DeployDirectory>
+    <Description>NAM Service Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="feedback">
+    <FileName>CustomerExperience_Feedback.xml</FileName>
+    <FileExtension>fsp</FileExtension>
+    <Directory>CustomerExperienceFeedback</Directory>
+    <DeployDirectory>CustomerExperienceFeedback</DeployDirectory>
+    <Description>Feedback Service Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="iseposture">
+    <FileName>ISEPostureCFG.xml</FileName>
+    <FileExtension>isp</FileExtension>
+    <Directory>ISE Posture</Directory>
+    <DeployDirectory>ISE Posture</DeployDirectory>
+    <Description>ISE Posture Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="iseposturejson">
+    <FileName>ISEPosture.json</FileName>
+    <FileExtension>json</FileExtension>
+    <Directory>ISE Posture</Directory>
+    <DeployDirectory>ISE Posture</DeployDirectory>
+    <Description>ISE Posture JSON Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="ampenabler">
+    <FileName>AMPEnabler_ServiceProfile.xml</FileName>
+    <FileExtension>asp</FileExtension>
+    <Directory>AMPEnabler</Directory>
+    <DeployDirectory>AMPEnabler</DeployDirectory>
+    <Description>AMP Enabler Service Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="nvm">
+    <FileName>NVM_ServiceProfile.xml</FileName>
+    <FileExtension>nvmsp</FileExtension>
+    <Directory>NVM</Directory>
+    <DeployDirectory>NVM</DeployDirectory>
+    <Description>Network Visibility Service Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+  <Profile service-type="umbrella">
+    <FileName>OrgInfo.json</FileName>
+    <FileExtension>json</FileExtension>
+    <Directory>Umbrella</Directory>
+    <DeployDirectory>Umbrella</DeployDirectory>
+    <Description>Umbrella Roaming Security Profile</Description>
+    <DownloadRemoveEmpty>false</DownloadRemoveEmpty>
+  </Profile>
+</ServiceProfiles>
+</service-profile-manifest>
+<vpn-client-pkg-version>
+<pkgversion>3,9,04053</pkgversion>
+</vpn-client-pkg-version>
+<vpn-core-manifest>
+<vpn rev="1.0">
+  <file version="3.9.04053" id="VPNCore" is_core="yes" type="msi" action="install" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-5.9.04053-core-vpn-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect Secure Mobility Client</display-name>
+  </file>
+  <file version="4.9.04053" id="DART" is_core="no" type="msi" action="install" module="dart" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-dart-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect DART</display-name>
+  </file>
+  <file version="4.9.04053" id="Posture" is_core="no" type="msi" action="install" module="posture" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-posture-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect Posture</display-name>
+  </file>
+  <file version="4.9.04053" id="gina" is_core="no" type="msi" action="install" module="vpngina" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-gina-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect SBL</display-name>
+  </file>
+  <file version="4.9.04053" id="NAM" is_core="no" type="msi" action="install" module="nam" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-nam-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect Network Access Manager</display-name>
+  </file>
+  <file version="4.9.04053" id="NVM" is_core="no" type="msi" action="install" module="nvm" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-nvm-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect Network Visibility</display-name>
+  </file>
+  <file version="4.9.04053" id="AMPEnabler" is_core="no" type="msi" action="install" module="ampenabler" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-amp-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect AMP Enabler</display-name>
+  </file>
+  <file version="4.9.04053" id="ISEPosture" is_core="no" type="msi" action="install" module="iseposture" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-iseposture-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect ISE Posture</display-name>
+  </file>
+  <file version="4.9.04053" id="Umbrella" is_core="no" type="msi" action="install" module="umbrella" os="win:6.1.7601">
+    <uri>binaries/anyconnect-win-4.9.04053-umbrella-webdeploy-k9.msi</uri>
+    <display-name>AnyConnect Umbrella Roaming Security</display-name>
+  </file>
+</vpn>
+</vpn-core-manifest>
+</opaque>
+<vpn-profile-manifest>
+<vpn rev="1.0">
+<file type="profile" service-type="user">
+<uri>/CACHE/stc/profiles/profile_test.xml</uri>
+<hash type="sha1">###PROFILEHASH###</hash>
+</file>
+</vpn>
+</vpn-profile-manifest>
+<vpn-customization-manifest>
+<vpn rev="1.0">
+<file app="AnyConnect" platform="win" type="binary">
+<filename>scripts_OnDisconnect.vbs</filename>
+<hash type="sha1">###VBSHASH###</hash>
+<file app="AnyConnect" platform="win" type="binary">
+<filename>scripts_OnConnect.vbs</filename>
+<hash type="sha1">###VBSHASHTWO###</hash>
+</file>
+</file>
+</vpn>
+</vpn-customization-manifest>
+</config>
+</config-auth>

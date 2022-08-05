@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config-auth client="vpn" type="auth-request" aggregate-auth-version="2">
+<opaque is-for="sg">
+<tunnel-group>VPN2</tunnel-group>
+<aggauth-handle>864640002</aggauth-handle>
+<auth-method>multiple-cert</auth-method>
+<auth-method>single-sign-on</auth-method>
+<group-alias>###VPNNAME###</group-alias>
+<config-hash>1619719004259</config-hash>
+</opaque>
+<auth id="main">
+<form>
+<input type="text" name="username" label="Username:"></input>
+<input type="password" name="password" label="Password:"></input>
+<select name="group_list" label="GROUP:">
+<option selected="true">###VPNNAME###</option>
+</select>
+</form>
+</auth>
+</config-auth>
