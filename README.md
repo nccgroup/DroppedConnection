@@ -2,6 +2,9 @@
 
 Emulates a Cisco ASA Anyconnect VPN service, accepting any credentials (and logging them) before serving VBS to the client that gets executed in the context of the user.
 
+Blog post: 
+https://research.nccgroup.com/2023/03/01/making-new-connections-leveraging-cisco-anyconnect-client-to-drop-and-run-payloads/
+
 # Usage Instructions
 1. Copy the files to a server.
 2. Make sure you have python2 (I know, but it works on appliances ;)) and pip installed, along with pyOpenSSL
