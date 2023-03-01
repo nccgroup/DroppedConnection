@@ -4,7 +4,7 @@ Emulates a Cisco ASA Anyconnect VPN service, accepting any credentials (and logg
 
 # Usage Instructions
 1. Copy the files to a server.
-2. Make sure you have python2 (I know) and pip installed, along with pyOpenSSL
+2. Make sure you have python2 (I know, but it works on appliances ;)) and pip installed, along with pyOpenSSL
 - sudo apt-get update
 - sudo apt install python2
 - sudo apt install python-pip
